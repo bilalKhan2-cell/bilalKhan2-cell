@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <center><img src="pic.jpg" style="width: 600px; height: 6cm;">
+    <h1 style="font-size: 50px;">Saylani Online Academy</h1>
+    </center>
+
+    <fieldset style="justify-content: center; align-items: center; width: 800px; margin: auto; border: none; font-style:unset; background-color:grey;">
+       <h2 style="text-align: center;font-size: 36px;">Student Registration Form</h2>
+       <form style="margin: 0px auto;" action="done.html">
+       <label for="studentName" style="font-size: 20px;">Name:</label>
+       <input type="text" name="studentName" required placeholder="Name" style="width: 380px; height: 20px; top: 20%; left: 20%; position: relative;">
+            <br><br>
+       <label for="studentFatherName" style="font-size:20px;">Father Name:</label>
+        <input type="text" name="studentFatherName" placeholder="Father Name" required style="width: 380px; height: 20px; top: 13%; left: 13%; position: relative;">
+                <br><br>
+        <label for="studentPassword" style="font-size:20px;">Password:</label>
+        <input type="password" name="studentPassword" required style="width: 380px; height: 20px; top: 16%; left: 16%; position: relative;">
+            <br><br>
+            <label for="studentAddress" style="font-size:20px;">Address:</label>
+            <input type="text" name="studentAddress" placeholder="Address" required style="width: 380px; height: 20px; top: 17%; left: 17%; height: 90px; position: relative;">        
+                <br><br>
+                <label for="studentGender" style="font-size:20px;">Gender:</label>
+                <input type="radio" name="studentGender" value="Male" required style="top: 17%; left: 17%; position: relative;"><label style="left: 17%; position: relative; top:17%;">Male</label>
+                <input type="radio" name="studentGender" value="Female" required style="top: 20%; left: 20%; position: relative;"><label style="top: 20%; left: 20%; position: relative;">Female</label>  
+                    <br><br>
+                    <label for="studentPassword" style="font-size:20px;">DOB:</label>
+                    <input type="date" name="studentBirth" required style="height: 20px; top: 20%; left: 20%; position: relative;">                        
+                        <br><br>
+                        <label for="studentMail" style="font-size:20px;">Email ID:</label>
+                        <input type="text" name="studentMail" required style="width: 380px; height: 20px; top: 16%; left: 16%; position: relative;">                                 
+                    <br><br>
+                    <label for="studentContactInfo" style="font-size:20px;">Mobile Number:</label>
+                    <input type="number" name="studentContactInfo" required style="width: 380px; height: 20px; top: 9%; left: 9%; position: relative;">
+                    <br><br>
+                    <label for="studentCity" style="font-size: 20px;">City:</label>
+                    <select name="studentCity" style="position: relative; top: 21%; left: 21%;">
+                            <option value="">Select Your City</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Faislabad">Faislabad</option>
+                            <option value="Larkana">Larkana</option>
+                            <option value="Dadu">Dadu</option>
+                    </select>
+                    <br><br>
+                    <label for="studentHobbies" style="font-size: 20px;">Hobbies:</label>
+                    <select style="position: relative; top: 17%; left: 17%;" size="4">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Chess">Chess</option>
+                    </select>
+                    <br><br>
+                    <label for="studentProfilePicture" style="font-size: 20px;">Picture Upload:</label>
+                    <input type="file" accept="Image/*" required name="studentProfilePicture" style="position: relative; top: 10%; left: 10%;">
+                    <br><br><br>
+                    <center><input type="submit" value="Submit Form" style="width: 150px;"></center>
+                </form>
+    </fieldset>
+</body>
+</html>

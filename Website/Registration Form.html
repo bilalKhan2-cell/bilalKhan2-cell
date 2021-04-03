@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin:  auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body bgcolor="#6495ED">
+    <div class="container">
+    <fieldset style="justify-content: center; align-items: center; width: 800px; margin: auto; border: none; font-style:unset; background-color:darkblue;">
+        <form method="POST" style="color: white;">
+            <h3 style="font-size: x-large;">Personal Details</h3>
+            <label for="name" style="font-size:large;">Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="name" required placeholder="Name" style="height: 20px; border-radius: 10px; width: 500px;">
+                <br><br>
+                <label for="fname" style="font-size:large;">Father Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="fname" placeholder="Father Name" required style="height: 20px; border-radius: 10px; width: 500px;">        
+                <br><br>
+                <label for="address" style="font-size:large;">Address:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="address" placeholder="Address" required style="height: 70px; border-radius: 10px; width: 500px;">        
+                <br><br>
+                <label for="gender" style="font-size:large;">Gender:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label style="position: relative; top: 10%; left: 10%;">Male</label>
+                <input type="radio" value="Male" name="fname" required style="position: relative; top: 10%; left: 10%;">        
+                <label style="position: relative; top: 12%; left: 12%;">Female</label>
+                <input type="radio" value="Male" name="gender" required style="position: relative; top: 12%; left: 12%;">        
+                <br><br>
+                <label for="course" style="font-size:large;">Course:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="course" required style="height: 20px; border-radius: 10px; width: 250px; top: 40%; left: 40%;"> 
+                    <option value="">Select Your Desired Course</option>
+                    <option value="Computer Programming Fundamentals">Programming Fundamentals</option>
+                    <option value="CIT">CIT</option>
+                    <option value="DIT">DIT</option>
+                    <option value="Web Designing and Development">Wed Designing and Development</option>
+                    <option value="PHP">PHP</option>
+                </select>       
+                <br><br>
+                <label for="contact" style="font-size:large;">Contact Info:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" name="contact" placeholder="Contact Info" required style="height: 20px; border-radius: 10px; width: 500px;">        
+                <br><br>
+                <label for="pic" style="font-size:large;">Image:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="file" accept="Image/*" name="pic" required style="position: relative; left: 10%; top: 10%;">        
+                <br><br>
+              <center><input type="submit" value="Submit Form" style="font-size: medium; background-color: maroon; color: white; width: 120px;">
+                        </center>
+            </form>
+   </fieldset>
+   </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <style>
+        fieldset{
+            margin:auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:crimson;
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+    </head>
+        <body style="background-color: royalblue;">
+        <fieldset>
+            <form>
+            <label for="FirstName" style="text-align: left; color: white; font-size: medium;">First Name:<br></label>
+            <input type="text" name="FirstName" style="width: 400px; height: 20px;" required>
+            <br><br>
+            <label for="LastName" style="text-align: left; color:white;font-size: medium;">Last Name:<br></label>
+                <input type="text" name="LastName" style="width: 400px; height: 20px;" required>         
+                <br><br>
+                <label for="gender" style="text-align: left; color: white; font-size: medium;">Gender</label>
+                <label style="position: relative; color: white; top: 20%; left: 20%;">Male</label> <input type="radio" value="Male" name="gender" required style="position: relative; top: 20%; left: 20%;">
+                <label style="position: relative; color: white; top: 30%; left: 30%;">Female</label> <input type="radio" value="Female" name="gender" required style="position: relative; top: 30%; left: 30%;"> 
+                <br><br>
+                <label for="mail" style="text-align: left; color: white;font-size: medium;">Email<br></label>
+                <input type="text" name="mail" required style="width: 400px; height: 20px;">
+                <br><br>
+                <label for="pass" style="text-align: left; color: white;font-size: medium;">Password<br></label>
+                <input type="password" name="pass" required style="width: 400px; height: 20px;">
+                <br><br>
+                <center><input type="submit" value="Create Account">&nbsp;&nbsp;<button type="button">Sign In</button></center>
+            </form>
+                </fieldset>
+                </body>
+                </html>
