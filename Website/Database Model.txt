@@ -1,0 +1,36 @@
+Database Table Structure [dbo].[stock]
+ 
+Name		Quantity	Price		Expense		Model		Date		Power		Stock ID
+
+AS (Logical Error)		8		1800		----		--		--		250		AGS/10
+AGS		10		1800		18000		BU-S9		1/1/1		250		AGS/1
+AGS		3		2500		5400		SA-P4		1/2/1		500		AGS/2
+AGS		20		3500		70000		DA-E4		1/3/1		1000		AGS/3
+AGS		5		3500		17500		DA-E4		1/4/1		1000		AGS/4
+Unique		10		1400		14000		BT-P9		1/5/1		250		Unique/1
+Osaka		12		1200		14400		GT-S3		1/6/1		250		Osaka/1
+
+Searching Method
+
+Name		SELECT SUM(Quantity) WHERE NAME='Name' || AND Power=1000
+
+Insertion Method
+
+First Select The Name and Model, If Count==0, Insert | Count==1, Check Model and Name, If Same Then Insert 
+| Error On Model Number
+
+Deletion Method
+
+DataGridView Supply Data To TextBoxes Then Delete By Id 
+
+Updation Method
+
+DataGridView Suppyl Data To TextBoxes Then Update By Id
+
+ID 	-> 0
+Name 	-> 1
+Contact -> 2
+Address -> 3
+City	-> 4
+
+		
